@@ -1,0 +1,17 @@
+.wrapper{
+    width:100vw;
+    height: 100vh;
+    background-size: contain;
+    background-position: center;
+    background-size: 100%;
+    position: relative;
+    background-color: black;
+}
+
+.navWrapper{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
