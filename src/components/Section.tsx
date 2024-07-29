@@ -13,7 +13,7 @@ const Section=()=>{
         <div className={styles.wrapper}>
             <div className={styles.navWrapper}><Navbar></Navbar></div>
             {/* <Videoplayer></Videoplayer> */}
-            <video width="100vw" height="auto" controls={false} muted={false} autoPlay>
+            <video width="100%" controls={false} muted={false} autoPlay>
                 <source src={video} type="video/mp4"/>
             </video>
             <div style={{position:"absolute",top:"65%",left:"50%",transform:"translateX(-50%)"}}>
