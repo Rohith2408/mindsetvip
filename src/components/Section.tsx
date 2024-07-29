@@ -24,7 +24,7 @@ const Section=()=>{
                     alt=""
                     src={title}
                 />
-                <div style={{width:"500px",height:"100px",borderRadius:"150px",backgroundColor:'rgba(255,255,255,1)',display:"flex",flexDirection:'row',gap:"10px",justifyContent:"center",alignItems:"center",boxShadow:"2px 2px solid black"}}>
+                <div style={{width:"600px",height:"100px",borderRadius:"150px",backgroundColor:'rgba(255,255,255,1)',display:"flex",flexDirection:'row',gap:"10px",justifyContent:"center",alignItems:"center",boxShadow:"2px 2px solid black"}}>
                     <p style={{fontFamily:"var(--font-bangers)",fontSize:"18px"}}>Contract address {contractadd}</p>
                     <button style={{padding:"10px",backgroundColor:"transparent",borderRadius:"10px"}} onClick={()=>{alert("Contract Address Copied");navigator.clipboard.writeText(contractadd)}}>
                         Copy
