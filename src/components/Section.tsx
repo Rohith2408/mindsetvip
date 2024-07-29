@@ -7,26 +7,26 @@ import { useRef } from 'react';
 
 const Section=()=>{
 
-    const contractadd=useRef("").current
+    const contractadd=useRef("4W9HBT6MvSZ6yWaYs7Ccb9keBFtwGX7NpEjHcVQppump").current
 
     return(
         <div className={styles.wrapper}>
-            <div className={styles.navWrapper}><Navbar></Navbar></div>
-            {/* <Videoplayer></Videoplayer> */}
+            <div style={{position:"absolute",top:"10%",left:"50%",transform:"translateX(-50%)"}}>
+                <div className={styles.navWrapper}><Navbar></Navbar></div>  
+            </div>
             <video width="100%" controls={false} muted={true} autoPlay>
                 <source src={video} type="video/mp4"/>
             </video>
-            <div style={{position:"absolute",top:"65%",left:"50%",transform:"translateX(-50%)"}}>
+            <div style={{position:"absolute",top:"60%",left:"50%",transform:"translateX(-50%)"}}>
                 <img
                     style={{width:"300px",height:"auto"}}
                     loading="lazy"
                     alt=""
                     src={title}
                 />
-                <div style={{width:"500px",height:"100px",borderRadius:"150px",backgroundColor:'rgba(255,255,255,0.5)',display:"flex",flexDirection:'row',gap:"10px",justifyContent:"center",alignItems:"center"}}>
-                    <p>Contract address {contractadd}</p>
-                    <button onClick={()=>{alert("Contract Address Copied");navigator.clipboard.writeText(contractadd)}}>
-                        {/* <img style={{height:"auto",width:"100%"}} src="/icon-2.svg"></img> */}
+                <div style={{width:"500px",height:"100px",borderRadius:"150px",backgroundColor:'rgba(255,255,255,1)',display:"flex",flexDirection:'row',gap:"10px",justifyContent:"center",alignItems:"center",boxShadow:"2px 2px solid black"}}>
+                    <p style={{fontFamily:"var(--font-bangers)",fontSize:"18px"}}>Contract address {contractadd}</p>
+                    <button style={{padding:"10px",backgroundColor:"transparent",borderRadius:"10px"}} onClick={()=>{alert("Contract Address Copied");navigator.clipboard.writeText(contractadd)}}>
                         Copy
                     </button>
                 </div>

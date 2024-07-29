@@ -15,7 +15,7 @@ const Navbar=()=>{
                 <a href="https://t.me/mindsetsol"><img className={styles.navItem} src={tg_icon}></img></a>
             </div>
             <div className={styles.navItemWrapper}>
-                <a ><img className={styles.navItem} src={nav3_icon}></img></a>
+                <a href="https://pump.fun/4W9HBT6MvSZ6yWaYs7Ccb9keBFtwGX7NpEjHcVQppump"><img className={styles.navItem} src={nav3_icon}></img></a>
             </div>
             <div className={styles.navItemWrapper}><img className={styles.navItem} src={dex}></img></div>
         </div>
